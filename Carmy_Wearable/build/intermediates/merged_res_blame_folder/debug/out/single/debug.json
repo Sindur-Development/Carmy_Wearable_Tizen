@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-merged_res-8:/layout_activity_main.xml.flat",
+        "source": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-main-10:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-merged_res-8:/xml_accessoryservices.xml.flat",
+        "source": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-main-10:/xml/accessoryservices.xml"
+    },
+    {
+        "merged": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-merged_res-8:/layout_message.xml.flat",
+        "source": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-main-10:/layout/message.xml"
+    },
+    {
+        "merged": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-merged_res-8:/mipmap_ic_launcher.png.flat",
+        "source": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-main-10:/mipmap/ic_launcher.png"
+    }
+]
