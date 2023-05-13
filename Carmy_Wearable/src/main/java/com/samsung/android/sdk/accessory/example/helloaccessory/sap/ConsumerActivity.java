@@ -36,12 +36,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.samsung.android.sdk.accessory.SAAgentV2;
+import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.VehicleManager;
 
+import org.json.JSONException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class ConsumerActivity extends Activity {
+
     private static final String TAG = "HelloAccessory(C)";
     private static TextView mTextView;
     private static MessageAdapter mMessageAdapter;
@@ -71,7 +76,7 @@ public class ConsumerActivity extends Activity {
         updateTextView("Disconnected");
         // Get service
         SAAgentV2.requestAgent(getApplicationContext(), ConsumerService.class.getName(), mAgentCallback);
-    }
+       }
 
     @Override
     protected void onDestroy() {

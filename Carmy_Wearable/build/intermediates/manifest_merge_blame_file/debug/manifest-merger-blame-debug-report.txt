@@ -1,13 +1,13 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.samsung.android.sdk.accessory.example.helloaccessory.consumer"
+3    package="com.samsung.android.sdk.accessory.example.helloaccessory.sap"
 4    android:versionCode="6"
 5    android:versionName="2.1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="15"
 8-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="26" />
+9        android:targetSdkVersion="33" />
 9-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -28,84 +28,135 @@
 16    <uses-permission android:name="com.samsung.WATCH_APP_TYPE.Companion" />
 16-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:9:5-75
 16-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:9:22-73
-17
-18    <application
-18-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:11:5-42:19
-19        android:allowBackup="true"
-19-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:12:9-35
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-21-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:13:9-43
-22        android:label="@string/app_name"
-22-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:14:9-41
-23        android:testOnly="true" >
-24        <activity
-24-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:15:9-22:20
-25            android:name="com.samsung.android.sdk.accessory.example.helloaccessory.consumer.ConsumerActivity"
-25-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:16:13-110
-26            android:screenOrientation="portrait" >
-26-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:17:13-49
-27            <intent-filter>
-27-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:18:13-21:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:19:17-69
-28-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:19:25-66
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:10:5-81
+17-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:10:22-78
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:11:5-79
+18-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:11:22-76
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:12:5-76
+19-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:12:22-73
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:13:5-79
+20-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:13:22-76
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:14:5-67
+21-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:14:22-64
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:15:5-81
+22-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:15:22-78
+23
+24    <permission
+24-->[androidx.core:core:1.9.0] C:\Users\Wake\.gradle\caches\transforms-3\31dd2fd25ee9a0eaa021c7cd8a443f22\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+25        android:name="com.samsung.android.sdk.accessory.example.helloaccessory.sap.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.9.0] C:\Users\Wake\.gradle\caches\transforms-3\31dd2fd25ee9a0eaa021c7cd8a443f22\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.9.0] C:\Users\Wake\.gradle\caches\transforms-3\31dd2fd25ee9a0eaa021c7cd8a443f22\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.samsung.android.sdk.accessory.example.helloaccessory.sap.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.9.0] C:\Users\Wake\.gradle\caches\transforms-3\31dd2fd25ee9a0eaa021c7cd8a443f22\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.9.0] C:\Users\Wake\.gradle\caches\transforms-3\31dd2fd25ee9a0eaa021c7cd8a443f22\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:20:17-77
-30-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:20:27-74
-31            </intent-filter>
-32        </activity>
-33
-34        <service android:name="com.samsung.android.sdk.accessory.SAService" />
-34-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:24:9-78
-34-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:24:18-76
-35        <service
-35-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:25:9-26:80
-36            android:name="com.samsung.android.sdk.accessory.SAJobService"
-36-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:25:18-79
-37            android:permission="android.permission.BIND_JOB_SERVICE" />
-37-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:26:13-69
-38
-39        <receiver android:name="com.samsung.android.sdk.accessory.RegisterUponInstallReceiver" >
-39-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:28:9-32:20
-39-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:28:19-95
-40            <intent-filter>
-40-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:29:13-31:29
-41                <action android:name="com.samsung.accessory.action.REGISTER_AGENT" />
-41-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:30:17-86
-41-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:30:25-83
-42            </intent-filter>
-43        </receiver>
-44        <receiver android:name="com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver" >
-44-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:33:9-37:20
-44-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:33:19-112
-45            <intent-filter>
-45-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:34:13-36:29
-46                <action android:name="com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED" />
-46-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:35:17-100
-46-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:35:25-97
-47            </intent-filter>
-48        </receiver>
-49
-50        <meta-data
-50-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:39:9-41:62
-51            android:name="AccessoryServicesLocation"
-51-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:40:13-53
-52            android:value="/res/xml/accessoryservices.xml" />
-52-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:41:13-59
-53        <meta-data
-53-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Wake\.gradle\caches\transforms-3\0871e40993a75b42de33f812392081cf\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
-54            android:name="android.support.VERSION"
-54-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Wake\.gradle\caches\transforms-3\0871e40993a75b42de33f812392081cf\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:27:13-51
-55            android:value="26.1.0" />
-55-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Wake\.gradle\caches\transforms-3\0871e40993a75b42de33f812392081cf\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:28:13-35
-56        <meta-data
-56-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Wake\.gradle\caches\transforms-3\143b33da4828b0dc6aa44be563416d5b\transformed\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
-57            android:name="android.arch.lifecycle.VERSION"
-57-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Wake\.gradle\caches\transforms-3\143b33da4828b0dc6aa44be563416d5b\transformed\runtime-1.0.0\AndroidManifest.xml:26:13-58
-58            android:value="27.0.0-SNAPSHOT" />
-58-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Wake\.gradle\caches\transforms-3\143b33da4828b0dc6aa44be563416d5b\transformed\runtime-1.0.0\AndroidManifest.xml:27:13-44
-59    </application>
-60
-61</manifest>
+30    <application
+30-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:17:5-52:19
+31        android:allowBackup="true"
+31-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:18:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.9.0] C:\Users\Wake\.gradle\caches\transforms-3\31dd2fd25ee9a0eaa021c7cd8a443f22\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:icon="@mipmap/ic_launcher"
+34-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:19:9-43
+35        android:label="@string/app_name"
+35-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:20:9-41
+36        android:networkSecurityConfig="@xml/network_security_config"
+36-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:21:9-69
+37        android:testOnly="true" >
+38        <activity
+38-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:22:9-30:20
+39            android:name="com.samsung.android.sdk.accessory.example.helloaccessory.sap.ConsumerActivity"
+39-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:23:13-105
+40            android:exported="true"
+40-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:25:13-36
+41            android:screenOrientation="portrait" >
+41-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:24:13-49
+42            <intent-filter>
+42-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:26:13-29:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:27:17-69
+43-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:27:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:28:17-77
+45-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:28:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <service android:name="com.samsung.android.sdk.accessory.SAService" />
+49-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:32:9-78
+49-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:32:18-76
+50        <service
+50-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:33:9-34:80
+51            android:name="com.samsung.android.sdk.accessory.SAJobService"
+51-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:33:18-79
+52            android:permission="android.permission.BIND_JOB_SERVICE" />
+52-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:34:13-69
+53
+54        <receiver
+54-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:36:9-41:20
+55            android:name="com.samsung.android.sdk.accessory.RegisterUponInstallReceiver"
+55-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:36:19-95
+56            android:exported="true" >
+56-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:37:13-36
+57            <intent-filter>
+57-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:38:13-40:29
+58                <action android:name="com.samsung.accessory.action.REGISTER_AGENT" />
+58-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:39:17-86
+58-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:39:25-83
+59            </intent-filter>
+60        </receiver>
+61        <receiver
+61-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:42:9-47:20
+62            android:name="com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver"
+62-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:42:19-112
+63            android:exported="true" >
+63-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:43:13-36
+64            <intent-filter>
+64-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:44:13-46:29
+65                <action android:name="com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED" />
+65-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:45:17-100
+65-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:45:25-97
+66            </intent-filter>
+67        </receiver>
+68
+69        <meta-data
+69-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:49:9-51:62
+70            android:name="AccessoryServicesLocation"
+70-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:50:13-53
+71            android:value="/res/xml/accessoryservices.xml" />
+71-->C:\Users\Wake\Google Drive\Dev\Carmy_Wearable\Android\Carmy_Wearable\src\main\AndroidManifest.xml:51:13-59
+72
+73        <provider
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wake\.gradle\caches\transforms-3\e6cc2b2d8911a4684bdbf3fe7c74bb2d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+74            android:name="androidx.startup.InitializationProvider"
+74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wake\.gradle\caches\transforms-3\e6cc2b2d8911a4684bdbf3fe7c74bb2d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+75            android:authorities="com.samsung.android.sdk.accessory.example.helloaccessory.sap.androidx-startup"
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wake\.gradle\caches\transforms-3\e6cc2b2d8911a4684bdbf3fe7c74bb2d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+76            android:exported="false" >
+76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wake\.gradle\caches\transforms-3\e6cc2b2d8911a4684bdbf3fe7c74bb2d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+77            <meta-data
+77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wake\.gradle\caches\transforms-3\e6cc2b2d8911a4684bdbf3fe7c74bb2d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wake\.gradle\caches\transforms-3\e6cc2b2d8911a4684bdbf3fe7c74bb2d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+79                android:value="androidx.startup" />
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Wake\.gradle\caches\transforms-3\e6cc2b2d8911a4684bdbf3fe7c74bb2d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+80            <meta-data
+80-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Wake\.gradle\caches\transforms-3\eaf38ecd125200be5cc6930a21dfb71f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+81                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+81-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Wake\.gradle\caches\transforms-3\eaf38ecd125200be5cc6930a21dfb71f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+82                android:value="androidx.startup" />
+82-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Wake\.gradle\caches\transforms-3\eaf38ecd125200be5cc6930a21dfb71f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+83        </provider>
+84    </application>
+85
+86</manifest>

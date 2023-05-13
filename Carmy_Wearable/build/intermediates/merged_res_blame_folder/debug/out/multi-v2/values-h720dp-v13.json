@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-mergeDebugResources-6:/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "com.samsung.android.sdk.accessory.example.helloaccessory.sap.Carmy_Wearable-mergeDebugResources-19:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Wake\\.gradle\\caches\\transforms-3\\0871e40993a75b42de33f812392081cf\\transformed\\appcompat-v7-26.1.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\Users\\Wake\\.gradle\\caches\\transforms-3\\f5e49d2319a94a5f2193f3f47ae7f6f6\\transformed\\appcompat-1.6.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

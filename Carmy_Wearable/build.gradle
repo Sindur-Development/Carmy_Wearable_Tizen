@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 33
     defaultConfig {
-        applicationId "com.samsung.android.sdk.accessory.example.helloaccessory.consumer"
+        applicationId "com.samsung.android.sdk.accessory.example.helloaccessory.sap"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 33
         versionCode 6
         versionName '2.1.0'
     }
@@ -17,10 +17,14 @@ android {
     }
     productFlavors {
     }
-    namespace 'com.samsung.android.sdk.accessory.example.helloaccessory.consumer'
+    namespace 'com.samsung.android.sdk.accessory.example.helloaccessory.sap'
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}
+
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
 }

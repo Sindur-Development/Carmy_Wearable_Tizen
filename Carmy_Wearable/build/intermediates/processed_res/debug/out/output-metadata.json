@@ -4,7 +4,7 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer",
+  "applicationId": "com.samsung.android.sdk.accessory.example.helloaccessory.sap",
   "variantName": "debug",
   "elements": [
     {

@@ -1,4 +1,4 @@
-#Fri May 05 22:15:21 CEST 2023
+#Sun May 14 00:08:45 CEST 2023
 base.0=C\:\\Users\\Wake\\Google Drive\\Dev\\Carmy_Wearable\\Android\\Carmy_Wearable\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
