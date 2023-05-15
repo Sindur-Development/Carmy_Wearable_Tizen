@@ -36,6 +36,7 @@ import com.samsung.android.sdk.accessory.SAPeerAgent;
 import com.samsung.android.sdk.accessory.SASocket;
 import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.VehicleManager;
 import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.commands.Flash;
+import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.commands.Honk;
 
 
 import org.json.JSONException;
@@ -133,9 +134,8 @@ public class ConsumerService extends SAAgentV2 {
     }
 
     public class ServiceConnection extends SASocket {
-        public ServiceConnection() throws JSONException, IOException, InterruptedException {
+        public ServiceConnection() {
             super(ServiceConnection.class.getName());
-            VehicleManager.startVehicleManager();
         }
 
         @Override
@@ -148,7 +148,7 @@ public class ConsumerService extends SAAgentV2 {
             addMessage("Received: ", message);
             if (message == "Lock") {
                 try {
-                    sendData(Flash.flash());
+                    sendData(Honk.honk());
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 } catch (InterruptedException e) {
