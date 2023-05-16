@@ -36,6 +36,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.samsung.android.sdk.accessory.SAAgentV2;
+import com.samsung.android.sdk.accessory.example.helloaccessory.consumer.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

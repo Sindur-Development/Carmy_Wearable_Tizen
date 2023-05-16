@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Wake\\Google Drive\\Dev\\Carmy_Wearable\\Android\\Carmy_Wearable\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\Dev\\Carmy_Wearable\\Carmy_Wearable\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -39,23 +39,6 @@
                         "endLines": "262",
                         "endColumns": "12",
                         "endOffsets": "17620"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Wake\\Google Drive\\Dev\\Carmy_Wearable\\Android\\Carmy_Wearable\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "157,57,105",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "198,99,151"
-                    },
-                    "to": {
-                        "startLines": "29,30,31",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "1974,2020,2067",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "2015,2062,2113"
                     }
                 },
                 {
@@ -78,6 +61,23 @@
                     }
                 },
                 {
+                    "source": "D:\\Dev\\Carmy_Wearable\\Carmy_Wearable\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,57,105",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "198,99,151"
+                    },
+                    "to": {
+                        "startLines": "29,30,31",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1974,2020,2067",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "2015,2062,2113"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Wake\\.gradle\\caches\\transforms-3\\2e2bbd05e2c5f37b87ab0ffbd53c22a1\\transformed\\support-media-compat-26.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10",
@@ -95,7 +95,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Wake\\Google Drive\\Dev\\Carmy_Wearable\\Android\\Carmy_Wearable\\src\\main\\res\\values\\strings.xml",
+                    "source": "D:\\Dev\\Carmy_Wearable\\Carmy_Wearable\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "8,7,5,9,6,10,3,11,12,13,4",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
