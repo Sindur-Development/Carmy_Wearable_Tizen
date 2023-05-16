@@ -36,7 +36,14 @@ import com.samsung.android.sdk.accessory.SAPeerAgent;
 import com.samsung.android.sdk.accessory.SASocket;
 import com.samsung.android.sdk.accessory.example.helloaccessory.consumer.R;
 
+import org.json.JSONException;
+
 import java.io.IOException;
+
+import entities.Vehicle;
+import services.VehicleManager;
+import services.commands.LockDoors;
+import services.commands.UnlockDoors;
 
 public class ConsumerService extends SAAgentV2 {
     private static final String TAG = "HelloAccessory(C)";
@@ -141,6 +148,26 @@ public class ConsumerService extends SAAgentV2 {
         public void onReceive(int channelId, byte[] data) {
             final String message = new String(data);
             addMessage("Received: ", message);
+            try {
+                switch (message) {
+                    case "Lock" -> {
+                        System.out.println(VehicleManager.currentVehicle.isLocked());
+                        if (VehicleManager.currentVehicle.isLocked()) {
+                            if (UnlockDoors.unlockDoors().equals("202")) VehicleManager.currentVehicle.setLocked(false);
+
+                        } else {
+                            if (LockDoors.lockDoors().equals("202")) VehicleManager.currentVehicle.setLocked(true);
+                        }
+                    }
+
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
         }
 
         @Override

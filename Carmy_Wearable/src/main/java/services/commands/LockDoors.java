@@ -1,6 +1,7 @@
 package services.commands;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -14,9 +15,9 @@ public class LockDoors extends EndPoint {
     }
 
     public static String lockDoors() throws IOException, InterruptedException, JSONException {
-//        JSONObject json = new JSONObject(
-        HttpRequest.createHttpPost(VIN + "/commands/lock","");
-        return "";//json.getJSONObject("async").getString("status");
+        JSONObject json = new JSONObject(
+        HttpRequest.createHttpPost(VIN + "/commands/lock",""));
+        return json.getString("status");
     }
 
 }

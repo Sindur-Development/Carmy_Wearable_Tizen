@@ -19,7 +19,7 @@ public class UnlockDoors extends EndPoint {
         JSONObject json = new JSONObject(HttpRequest.createHttpPost(VIN + "/commands/unlock","{\"unlockDuration\":120}"));
         VehicleManager.currentVehicle.setLastCommandRef(json.getJSONObject("async").getString("href"));
         System.out.println(json.getJSONObject("async").getString("status"));
-        return json.getJSONObject("async").getString("status");
+        return json.getString("status");
     }
 
 }

@@ -3,6 +3,7 @@ package entities;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -11,8 +12,8 @@ import java.net.URL;
 public class Vehicle {
 
     private String name;
+    private boolean isLocked;
     private String VIN;
-
     private String lastCommandRef;
     private JSONObject doors;
     private JSONObject windows;
@@ -69,8 +70,9 @@ public class Vehicle {
         return doors;
     }
 
-    public void setDoors(JSONObject doors) {
+    public void setDoors(JSONObject doors) throws JSONException {
         this.doors = doors;
+        isLocked = doors.getJSONObject("data").getJSONObject("carLocked").get("value").equals("UNLOCKED") ? false : true;
     }
 
     public JSONObject getWindows() {
@@ -111,5 +113,13 @@ public class Vehicle {
 
     public void setVehicleDetails(JSONObject vehicleDetails) {
         this.vehicleDetails = vehicleDetails;
+    }
+
+    public boolean isLocked() {
+        return isLocked;
+    }
+
+    public void setLocked(boolean locked) {
+        isLocked = locked;
     }
 }

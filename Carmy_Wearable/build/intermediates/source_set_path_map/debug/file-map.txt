@@ -1,6 +1,6 @@
-com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-appcompat-v7-26.1.0-0 C:\Users\Wake\.gradle\caches\transforms-3\0871e40993a75b42de33f812392081cf\transformed\appcompat-v7-26.1.0\res
-com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-support-media-compat-26.1.0-1 C:\Users\Wake\.gradle\caches\transforms-3\2e2bbd05e2c5f37b87ab0ffbd53c22a1\transformed\support-media-compat-26.1.0\res
-com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-support-compat-26.1.0-2 C:\Users\Wake\.gradle\caches\transforms-3\ede382a412edea33ea524491936a7109\transformed\support-compat-26.1.0\res
+com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-appcompat-v7-28.0.0-0 C:\Users\Wake\.gradle\caches\transforms-3\405889b458a7c4b54e2ec8bfc1b9efa2\transformed\appcompat-v7-28.0.0\res
+com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-coordinatorlayout-28.0.0-1 C:\Users\Wake\.gradle\caches\transforms-3\c54accd9effbe1a2f5b15e4cc4cd0594\transformed\coordinatorlayout-28.0.0\res
+com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-support-compat-28.0.0-2 C:\Users\Wake\.gradle\caches\transforms-3\e82909c9de5ed0ffb2f74d2f94120468\transformed\support-compat-28.0.0\res
 com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-pngs-3 D:\Dev\Carmy_Wearable\Carmy_Wearable\build\generated\res\pngs\debug
 com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-resValues-4 D:\Dev\Carmy_Wearable\Carmy_Wearable\build\generated\res\resValues\debug
 com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-rs-5 D:\Dev\Carmy_Wearable\Carmy_Wearable\build\generated\res\rs\debug

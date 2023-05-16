@@ -38,9 +38,14 @@ import android.widget.Toast;
 import com.samsung.android.sdk.accessory.SAAgentV2;
 import com.samsung.android.sdk.accessory.example.helloaccessory.consumer.R;
 
+import org.json.JSONException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import services.VehicleManager;
 
 public class ConsumerActivity extends Activity {
     private static final String TAG = "HelloAccessory(C)";
@@ -72,6 +77,19 @@ public class ConsumerActivity extends Activity {
         updateTextView("Disconnected");
         // Get service
         SAAgentV2.requestAgent(getApplicationContext(), ConsumerService.class.getName(), mAgentCallback);
+        try {
+            startVehicleManager();
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void startVehicleManager() throws JSONException, IOException, InterruptedException {
+        VehicleManager.startVehicleManager();
     }
 
     @Override

@@ -31,8 +31,8 @@ public class VehicleManager {
     public static void updateVehicle() throws IOException, InterruptedException, JSONException {
 
         currentVehicle.setDoors(Doors.getDoorStatus());
-        currentVehicle.setWindows(Windows.getWindowStatus());
-        currentVehicle.setVehicleDetails(VehicleDetails.getVehicleDetails());
+//        currentVehicle.setWindows(Windows.getWindowStatus());
+//        currentVehicle.setVehicleDetails(VehicleDetails.getVehicleDetails());
 
         // Todo fixa images
 //        currentVehicle.saveImage(currentVehicle.getVehicleDetails()

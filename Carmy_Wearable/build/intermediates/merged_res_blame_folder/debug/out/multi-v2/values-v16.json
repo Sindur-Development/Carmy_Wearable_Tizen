@@ -4,7 +4,7 @@
             "outputFile": "com.samsung.android.sdk.accessory.example.helloaccessory.consumer.Carmy_Wearable-mergeDebugResources-6:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Wake\\.gradle\\caches\\transforms-3\\ede382a412edea33ea524491936a7109\\transformed\\support-compat-26.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Wake\\.gradle\\caches\\transforms-3\\e82909c9de5ed0ffb2f74d2f94120468\\transformed\\support-compat-28.0.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Wake\\.gradle\\caches\\transforms-3\\0871e40993a75b42de33f812392081cf\\transformed\\appcompat-v7-26.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Wake\\.gradle\\caches\\transforms-3\\405889b458a7c4b54e2ec8bfc1b9efa2\\transformed\\appcompat-v7-28.0.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
