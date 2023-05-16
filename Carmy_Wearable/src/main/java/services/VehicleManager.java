@@ -1,16 +1,17 @@
 package services;
 
+import com.samsung.android.sdk.accessory.example.helloaccessory.sap.ConsumerService;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.util.function.Consumer;
 
 import entities.Vehicle;
 import httprequest.HttpRequest;
 import services.status.Doors;
-import services.status.VehicleDetails;
-import services.status.Windows;
 
 
 public class VehicleManager {
@@ -18,12 +19,15 @@ public class VehicleManager {
     public static Vehicle currentVehicle;
     public static JSONObject vehiclelist;
 
+    public static ConsumerService consumerService;
+
     public VehicleManager() throws MalformedURLException {
     }
 
 
-    public static void startVehicleManager() throws IOException, InterruptedException, JSONException {
+    public static void startVehicleManager(ConsumerService mConsumerService) throws IOException, InterruptedException, JSONException {
         //TODO skapa lösning för flera VIN's
+        consumerService = mConsumerService;
         setVehicleVIN();
         updateVehicle();
 

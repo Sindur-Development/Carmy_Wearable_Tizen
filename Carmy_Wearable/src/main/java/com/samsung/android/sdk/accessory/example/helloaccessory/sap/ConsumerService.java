@@ -153,10 +153,10 @@ public class ConsumerService extends SAAgentV2 {
                     case "Lock" -> {
                         System.out.println(VehicleManager.currentVehicle.isLocked());
                         if (VehicleManager.currentVehicle.isLocked()) {
-                            if (UnlockDoors.unlockDoors().equals("202")) VehicleManager.currentVehicle.setLocked(false);
+                            UnlockDoors.unlockDoors();
 
                         } else {
-                            if (LockDoors.lockDoors().equals("202")) VehicleManager.currentVehicle.setLocked(true);
+                            LockDoors.lockDoors();
                         }
                     }
 

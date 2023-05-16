@@ -57,6 +57,15 @@ public class ConsumerActivity extends Activity {
         @Override
         public void onAgentAvailable(SAAgentV2 agent) {
             mConsumerService = (ConsumerService)agent;
+            try {
+                startVehicleManager();
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
 
         @Override
@@ -77,19 +86,11 @@ public class ConsumerActivity extends Activity {
         updateTextView("Disconnected");
         // Get service
         SAAgentV2.requestAgent(getApplicationContext(), ConsumerService.class.getName(), mAgentCallback);
-        try {
-            startVehicleManager();
-        } catch (JSONException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+
     }
 
     private void startVehicleManager() throws JSONException, IOException, InterruptedException {
-        VehicleManager.startVehicleManager();
+        VehicleManager.startVehicleManager(mConsumerService);
     }
 
     @Override

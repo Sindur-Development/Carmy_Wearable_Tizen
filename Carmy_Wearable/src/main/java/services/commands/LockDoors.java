@@ -8,6 +8,7 @@ import java.net.MalformedURLException;
 
 import httprequest.HttpRequest;
 import services.EndPoint;
+import services.VehicleManager;
 
 public class LockDoors extends EndPoint {
 
@@ -17,6 +18,10 @@ public class LockDoors extends EndPoint {
     public static String lockDoors() throws IOException, InterruptedException, JSONException {
         JSONObject json = new JSONObject(
         HttpRequest.createHttpPost(VIN + "/commands/lock",""));
+        if (json.getString("status").equals("202")){
+            VehicleManager.currentVehicle.setLocked(true);
+            System.out.println(VehicleManager.consumerService.sendData("Locked"));
+        }
         return json.getString("status");
     }
 
