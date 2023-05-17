@@ -36,8 +36,8 @@
 19-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:12:5-43:19
 20        android:allowBackup="true"
 20-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:13:9-35
-21        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-21-->[com.android.support:support-compat:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e82909c9de5ed0ffb2f74d2f94120468\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.0.0] C:\Users\Wake\.gradle\caches\transforms-3\995a23c93b82c9abcdb9d17c86a7edae\transformed\core-1.0.0\AndroidManifest.xml:22:18-86
 22        android:debuggable="true"
 23        android:icon="@mipmap/ic_launcher"
 23-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:14:9-43

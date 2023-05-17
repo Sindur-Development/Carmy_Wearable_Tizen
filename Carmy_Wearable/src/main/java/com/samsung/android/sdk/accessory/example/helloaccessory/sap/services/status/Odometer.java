@@ -6,7 +6,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import com.samsung.android.sdk.accessory.example.helloaccessory.sap.httprequest.HttpRequest;
+
 import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.EndPoint;
 
 
@@ -15,7 +15,7 @@ public class Odometer extends EndPoint {
     }
 
     public static String getOdometer() throws IOException, JSONException, InterruptedException {
-        JSONObject json = new JSONObject(HttpRequest.createGetRequest(VIN + "/odometer"));
+        JSONObject json = new JSONObject(httprequest.HttpRequest.createGetRequest(VIN + "/odometer"));
         return getOdometerValue(json)+" " +getOdometerUnit(json);
     }
 

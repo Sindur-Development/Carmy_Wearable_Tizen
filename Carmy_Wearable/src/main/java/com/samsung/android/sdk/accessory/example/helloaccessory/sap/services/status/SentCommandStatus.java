@@ -6,16 +6,16 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import com.samsung.android.sdk.accessory.example.helloaccessory.sap.httprequest.HttpRequest;
+
 import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.EndPoint;
-import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.VehicleManager;
+
 
 public class SentCommandStatus extends EndPoint {
     public SentCommandStatus() throws MalformedURLException {
     }
 
     public static String getSentCommandStatus() throws IOException, InterruptedException, JSONException {
-        JSONObject json = new JSONObject(HttpRequest.createGetRequest(VehicleManager.currentVehicle.getLastCommandRef().split("vehicles")[1],"requestdetailresponse"));
+        JSONObject json = new JSONObject(httprequest.HttpRequest.createGetRequest(services.VehicleManager.currentVehicle.getLastCommandRef().split("vehicles")[1],"requestdetailresponse"));
         return getCommand(json)+" "+getInvokeStatus(json);
     }
 

@@ -3,7 +3,7 @@ package com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.st
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import com.samsung.android.sdk.accessory.example.helloaccessory.sap.httprequest.HttpRequest;
+
 import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.EndPoint;
 
 
@@ -12,7 +12,7 @@ public class FuelLevel extends EndPoint {
     }
 
     public String getFuelLevel() throws IOException, InterruptedException {
-        return HttpRequest.createGetRequest(VIN +"/fuel");
+        return httprequest.HttpRequest.createGetRequest(VIN +"/fuel");
 
     }
 }

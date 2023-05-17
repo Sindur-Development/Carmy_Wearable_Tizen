@@ -1,17 +1,16 @@
 package services;
 
 import com.samsung.android.sdk.accessory.example.helloaccessory.sap.ConsumerService;
+import com.samsung.android.sdk.accessory.example.helloaccessory.sap.entities.Vehicle;
+import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.EndPoint;
+import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.status.Doors;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.util.function.Consumer;
-
-import entities.Vehicle;
 import httprequest.HttpRequest;
-import services.status.Doors;
+
 
 
 public class VehicleManager {
@@ -52,7 +51,7 @@ public class VehicleManager {
 
 
     public static void setVehicleVIN() throws IOException, InterruptedException, JSONException {
-        vehiclelist = new JSONObject(HttpRequest.createGetRequest("","vehiclelist"));
+        vehiclelist = new JSONObject(httprequest.HttpRequest.createGetRequest("","vehiclelist"));
         //fixa konto med flera bilar todo
         currentVehicle = new Vehicle(vehiclelist.getJSONArray("data").getJSONObject(0).getString("vin"));
         EndPoint.VIN = currentVehicle.getVIN();

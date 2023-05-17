@@ -28,27 +28,18 @@ import android.os.Binder;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
-
 import com.samsung.android.sdk.SsdkUnsupportedException;
 import com.samsung.android.sdk.accessory.SA;
 import com.samsung.android.sdk.accessory.SAAgentV2;
 import com.samsung.android.sdk.accessory.SAPeerAgent;
 import com.samsung.android.sdk.accessory.SASocket;
-import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.VehicleManager;
-import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.commands.Flash;
+import com.samsung.android.sdk.accessory.example.helloaccessory.consumer.R;
 import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.commands.Honk;
-
-
+import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.commands.LockDoors;
+import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.commands.UnlockDoors;
 import org.json.JSONException;
-
-import org.json.JSONException;
-
 import java.io.IOException;
 
-import entities.Vehicle;
-import services.VehicleManager;
-import services.commands.LockDoors;
-import services.commands.UnlockDoors;
 
 public class ConsumerService extends SAAgentV2 {
     private static final String TAG = "HelloAccessory(C)";
