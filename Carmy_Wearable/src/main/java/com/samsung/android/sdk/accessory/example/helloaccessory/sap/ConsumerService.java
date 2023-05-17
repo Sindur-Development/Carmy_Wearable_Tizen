@@ -25,6 +25,7 @@ package com.samsung.android.sdk.accessory.example.helloaccessory.sap;
 
 import android.content.Context;
 import android.os.Binder;
+import android.os.Build;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
@@ -39,6 +40,8 @@ import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.com
 import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.commands.UnlockDoors;
 import org.json.JSONException;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 
 public class ConsumerService extends SAAgentV2 {
@@ -147,19 +150,19 @@ public class ConsumerService extends SAAgentV2 {
                 switch (message) {
                     case "Lock" -> {
                         if (LockDoors.lockDoors().equals("202")) {
-                            message += " Sucess";
+                            message += " (Status: Success)";
                         }
                         else {
-                            message += " Failed";
+                            message += " (Status: Failed)";
                         }
                         break;
                     }
                     case "Unlock" -> {
                         if (UnlockDoors.unlockDoors().equals("202")) {
-                            message += " Sucess";
+                            message += " (Status: Car unlocked for 120 seconds,\n which is max time within Volvo restrictions)";
                         }
                         else {
-                            message += " Failed";
+                            message += " (Status: Failed)";
                         }
                         break;
                     }
@@ -172,7 +175,9 @@ public class ConsumerService extends SAAgentV2 {
                 throw new RuntimeException(e);
             }
 
-            addMessage("Received: ", message);
+            message = addTimeStampToMessage(message);
+
+            addMessage("Command from Wearable: ", message);
             if (message == "Lock") {
                 try {
                     sendData(Honk.honk());
@@ -194,6 +199,13 @@ public class ConsumerService extends SAAgentV2 {
         }
     }
 
+    private String addTimeStampToMessage(String message) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            message += " " + LocalDate.now() + " " + LocalTime.now();
+        }
+        return message;
+    }
+
     public class LocalBinder extends Binder {
         public ConsumerService getService() {
             return ConsumerService.this;
@@ -213,7 +225,7 @@ public class ConsumerService extends SAAgentV2 {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            addMessage("Sent: ", data);
+            addMessage("Response to Wearable: ", data);
         }
         return retvalue;
     }

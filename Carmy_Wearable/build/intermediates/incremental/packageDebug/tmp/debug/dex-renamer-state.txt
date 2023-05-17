@@ -1,4 +1,4 @@
-#Wed May 17 16:10:27 CEST 2023
+#Wed May 17 16:19:40 CEST 2023
 base.0=D\:\\Dev\\Carmy_Wearable\\Carmy_Wearable\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
