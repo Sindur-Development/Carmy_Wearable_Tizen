@@ -146,20 +146,27 @@ public class ConsumerService extends SAAgentV2 {
 
         @Override
         public void onReceive(int channelId, byte[] data) {
-            final String message = new String(data);
-            addMessage("Received: ", message);
+            String message = new String(data);
             try {
                 switch (message) {
                     case "Lock" -> {
-                        System.out.println(VehicleManager.currentVehicle.isLocked());
-                        if (VehicleManager.currentVehicle.isLocked()) {
-                            UnlockDoors.unlockDoors();
-
-                        } else {
-                            LockDoors.lockDoors();
+                        if (LockDoors.lockDoors().equals("202")) {
+                            message += " Sucess";
                         }
+                        else {
+                            message += " Failed";
+                        }
+                        break;
                     }
-
+                    case "Unlock" -> {
+                        if (UnlockDoors.unlockDoors().equals("202")) {
+                            message += " Sucess";
+                        }
+                        else {
+                            message += " Failed";
+                        }
+                        break;
+                    }
                 }
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -168,7 +175,10 @@ public class ConsumerService extends SAAgentV2 {
             } catch (JSONException e) {
                 throw new RuntimeException(e);
             }
+
+            addMessage("Received: ", message);
         }
+
 
         @Override
         protected void onServiceConnectionLost(int reason) {

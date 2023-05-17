@@ -619,9 +619,7 @@ id beginning
 id blocking
 id bottom
 id buttonConnect
-id buttonDisconnect
 id buttonPanel
-id buttonSend
 id center
 id center_horizontal
 id center_vertical
@@ -816,9 +814,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
-string buttonConnect
-string buttonDisconnect
-string buttonSend
+string buttonLogin
 string hello_world
 string search_menu_title
 string status_bar_notification_info_overflow

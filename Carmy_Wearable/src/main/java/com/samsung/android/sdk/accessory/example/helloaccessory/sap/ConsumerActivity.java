@@ -109,31 +109,32 @@ public class ConsumerActivity extends Activity {
 
     public void mOnClick(View v) {
         switch (v.getId()) {
+
             case R.id.buttonConnect: {
                 if (mConsumerService != null) {
                     mConsumerService.findPeers();
                 }
                 break;
             }
-            case R.id.buttonDisconnect: {
-                if (mConsumerService != null) {
-                    if (mConsumerService.closeConnection() == false) {
-                        updateTextView("Disconnected");
-                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
-                        mMessageAdapter.clear();
-                    }
-                }
-                break;
-            }
-            case R.id.buttonSend: {
-                if (mConsumerService != null) {
-                    if (mConsumerService.sendData("Hello Accessory!")) {
-                    } else {
-                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
-                    }
-                }
-                break;
-            }
+//            case R.id.buttonDisconnect: {
+//                if (mConsumerService != null) {
+//                    if (mConsumerService.closeConnection() == false) {
+//                        updateTextView("Disconnected");
+//                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
+//                        mMessageAdapter.clear();
+//                    }
+//                }
+//                break;
+//            }
+//            case R.id.buttonSend: {
+//                if (mConsumerService != null) {
+//                    if (mConsumerService.sendData("Hello Accessory!")) {
+//                    } else {
+//                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
+//                    }
+//                }
+//                break;
+//            }
             default:
         }
     }

@@ -35,6 +35,7 @@ public class VehicleManager {
     public static void updateVehicle() throws IOException, InterruptedException, JSONException {
 
         currentVehicle.setDoors(Doors.getDoorStatus());
+        consumerService.sendData((currentVehicle.isLocked() ? "Car Locked" : "Car Unlocked"));
 //        currentVehicle.setWindows(Windows.getWindowStatus());
 //        currentVehicle.setVehicleDetails(VehicleDetails.getVehicleDetails());
 
