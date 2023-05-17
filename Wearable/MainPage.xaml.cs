@@ -30,7 +30,7 @@ namespace Wearable
 
         private void Button_Clicked_Lock(object sender, EventArgs e)
         {
-            ReceivedMessage = Peer.Status.ToString() + " " + Peer.ToString(); 
+        
             try
             {
                 if (Peer != null)
@@ -38,6 +38,7 @@ namespace Wearable
                     if (isLocked) { 
                         Connection.Send(ChannelId, Encoding.UTF8.GetBytes("Unlock"));
                         ShowMessage("Unlock command sent to phone");
+                        
                     }
                     else
                     {
@@ -127,7 +128,6 @@ namespace Wearable
         // broadcaster that looks for messages from phone
         private void Connection_DataReceived(object sender, DataReceivedEventArgs e)
         {
-            ShowMessage("Command status received");
             ReceivedMessage = System.Text.Encoding.ASCII.GetString(e.Data);
         }
 
@@ -138,24 +138,36 @@ namespace Wearable
             set
             {
                 receivedMessage = value;
-                OnPropertyChanged();
-                if (value == "Locked" || value=="Unlocked")
+                
+                if (value == "Locked")
                 {
                     isLocked = !isLocked;
-                    lockButton.Text = value == "Locked" ? "Unlock" : "Lock";
+                    lockButton.Text = "Unlock";
+
+                } 
+                else if(value == "Unlocked")
+                {
+                    isLocked = !isLocked;
+                    lockButton.Text = "Lock";
+                    receivedMessage += " for 120 seconds";
+
+
                 }
-                if (value == "Car Unlocked")
+                else if (value == "Car Unlocked")
                 {
                     isLocked = !isLocked;
                     lockButton.Text = "Lock";
                 }
+               
+             
+                OnPropertyChanged();
             }
         }
 
         // toast to show messages
         private void ShowMessage(string message, string debugLog = null)
         {
-            Toast.DisplayText(message, 1000);
+            Toast.DisplayText(message, 3000);
             if (debugLog != null)
             {
                 debugLog = message;
