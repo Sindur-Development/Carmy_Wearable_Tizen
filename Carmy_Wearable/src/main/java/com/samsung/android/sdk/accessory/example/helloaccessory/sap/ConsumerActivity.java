@@ -36,7 +36,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.samsung.android.sdk.accessory.SAAgentV2;
-import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.VehicleManager;
+import com.samsung.android.sdk.accessory.example.helloaccessory.consumer.R;
 
 import org.json.JSONException;
 
@@ -45,8 +45,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ConsumerActivity extends Activity {
+import services.VehicleManager;
 
+public class ConsumerActivity extends Activity {
     private static final String TAG = "HelloAccessory(C)";
     private static TextView mTextView;
     private static MessageAdapter mMessageAdapter;
@@ -56,6 +57,15 @@ public class ConsumerActivity extends Activity {
         @Override
         public void onAgentAvailable(SAAgentV2 agent) {
             mConsumerService = (ConsumerService)agent;
+            try {
+                startVehicleManager();
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
 
         @Override
@@ -76,19 +86,11 @@ public class ConsumerActivity extends Activity {
         updateTextView("Disconnected");
         // Get service
         SAAgentV2.requestAgent(getApplicationContext(), ConsumerService.class.getName(), mAgentCallback);
-        try {
-            startVehicleManager();
-        } catch (JSONException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+
     }
 
     private void startVehicleManager() throws JSONException, IOException, InterruptedException {
-        VehicleManager.startVehicleManager();
+        VehicleManager.startVehicleManager(mConsumerService);
     }
 
     @Override
@@ -107,31 +109,32 @@ public class ConsumerActivity extends Activity {
 
     public void mOnClick(View v) {
         switch (v.getId()) {
+
             case R.id.buttonConnect: {
                 if (mConsumerService != null) {
                     mConsumerService.findPeers();
                 }
                 break;
             }
-            case R.id.buttonDisconnect: {
-                if (mConsumerService != null) {
-                    if (mConsumerService.closeConnection() == false) {
-                        updateTextView("Disconnected");
-                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
-                        mMessageAdapter.clear();
-                    }
-                }
-                break;
-            }
-            case R.id.buttonSend: {
-                if (mConsumerService != null) {
-                    if (mConsumerService.sendData("Hello Accessory!")) {
-                    } else {
-                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
-                    }
-                }
-                break;
-            }
+//            case R.id.buttonDisconnect: {
+//                if (mConsumerService != null) {
+//                    if (mConsumerService.closeConnection() == false) {
+//                        updateTextView("Disconnected");
+//                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
+//                        mMessageAdapter.clear();
+//                    }
+//                }
+//                break;
+//            }
+//            case R.id.buttonSend: {
+//                if (mConsumerService != null) {
+//                    if (mConsumerService.sendData("Hello Accessory!")) {
+//                    } else {
+//                        Toast.makeText(getApplicationContext(), R.string.ConnectionAlreadyDisconnected, Toast.LENGTH_LONG).show();
+//                    }
+//                }
+//                break;
+//            }
             default:
         }
     }

@@ -1,0 +1,209 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\405889b458a7c4b54e2ec8bfc1b9efa2\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\4580ec32d2c0b0f6045a582d6bf2c5cf\transformed\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\67eb46789feeabb173b2f809b8c217d5\transformed\animated-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\d4970c4f80d1092ffe3308925770935c\transformed\support-core-ui-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\3257e5e365b8fff97bca36d742c623c6\transformed\support-core-utils-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\650c616a5dcb34a0e03699e9888ffc15\transformed\support-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\837fec8e1921f99078c656e0192bb459\transformed\loader-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\7800b995f15e4fa03db4be885fec46ca\transformed\viewpager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\c54accd9effbe1a2f5b15e4cc4cd0594\transformed\coordinatorlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\8c24445e75e6b79bc6262a85472350ba\transformed\drawerlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\b01be574be9d532ed705e92e8f223b65\transformed\slidingpanelayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\56a83585c19da5ad0f99e16110e8205f\transformed\customview-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\61854035fbeac4fe9735744d992b8ac0\transformed\swiperefreshlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\8d7247f1ae2b666d4813dc4689cadf2a\transformed\asynclayoutinflater-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e82909c9de5ed0ffb2f74d2f94120468\transformed\support-compat-28.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\c2fb99bc3210be6c9a63d68bc3e02e8f\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e7ce7be3f07643069e18252dbbb72953\transformed\cursoradapter-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\051c1bee5aba49ee0fe10f30a880ffa5\transformed\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\eee213e3fb38ee95e1740d9d7321f3da\transformed\documentfile-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\f05a81a00b8af25609ed99fee3f46af2\transformed\localbroadcastmanager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\0a85c46c267a7ea89d4da97091867f79\transformed\print-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\42c40864d06adb2a377f3fe168920491\transformed\viewmodel-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\ddf896f4f7ba92becafaf600c009b1f4\transformed\livedata-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\f069bf080bc50e5fbba9e8ea29b1c472\transformed\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\576b38289c85de32c5158a2b9b566df1\transformed\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\f17896774487aa094a16704b5bcb23de\transformed\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+	package
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:4:5-68
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:4:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:5:5-74
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:5:22-71
+uses-permission#com.samsung.accessory.permission.ACCESSORY_FRAMEWORK
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:6:5-92
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:6:22-89
+uses-permission#com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:7:5-117
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:7:22-114
+uses-permission#com.samsung.wmanager.ENABLE_NOTIFICATION
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:8:22-77
+uses-permission#com.samsung.WATCH_APP_TYPE.Companion
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:9:22-73
+uses-permission#android.permission.INTERNET
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:10:5-66
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:10:22-64
+application
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:12:5-43:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e82909c9de5ed0ffb2f74d2f94120468\transformed\support-compat-28.0.0\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e82909c9de5ed0ffb2f74d2f94120468\transformed\support-compat-28.0.0\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\c2fb99bc3210be6c9a63d68bc3e02e8f\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\c2fb99bc3210be6c9a63d68bc3e02e8f\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e82909c9de5ed0ffb2f74d2f94120468\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:15:9-41
+	android:icon
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:13:9-35
+activity#com.samsung.android.sdk.accessory.example.helloaccessory.sap.ConsumerActivity
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:16:9-23:20
+	android:screenOrientation
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:18:13-49
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:17:13-105
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:21:27-74
+service#com.samsung.android.sdk.accessory.SAService
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:25:9-78
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:25:18-76
+service#com.samsung.android.sdk.accessory.SAJobService
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:26:9-27:80
+	android:permission
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:27:13-69
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:26:18-79
+receiver#com.samsung.android.sdk.accessory.RegisterUponInstallReceiver
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:29:9-33:20
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:29:19-95
+intent-filter#action:name:com.samsung.accessory.action.REGISTER_AGENT
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:30:13-32:29
+action#com.samsung.accessory.action.REGISTER_AGENT
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:31:17-86
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:31:25-83
+receiver#com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:34:9-38:20
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:34:19-112
+intent-filter#action:name:com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:35:13-37:29
+action#com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:36:17-100
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:36:25-97
+meta-data#AccessoryServicesLocation
+ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:40:9-42:62
+	android:value
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:42:13-59
+	android:name
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:41:13-53
+uses-sdk
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\405889b458a7c4b54e2ec8bfc1b9efa2\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\405889b458a7c4b54e2ec8bfc1b9efa2\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\4580ec32d2c0b0f6045a582d6bf2c5cf\transformed\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\4580ec32d2c0b0f6045a582d6bf2c5cf\transformed\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\67eb46789feeabb173b2f809b8c217d5\transformed\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\67eb46789feeabb173b2f809b8c217d5\transformed\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\d4970c4f80d1092ffe3308925770935c\transformed\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\d4970c4f80d1092ffe3308925770935c\transformed\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\3257e5e365b8fff97bca36d742c623c6\transformed\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\3257e5e365b8fff97bca36d742c623c6\transformed\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\650c616a5dcb34a0e03699e9888ffc15\transformed\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\650c616a5dcb34a0e03699e9888ffc15\transformed\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\837fec8e1921f99078c656e0192bb459\transformed\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\837fec8e1921f99078c656e0192bb459\transformed\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\7800b995f15e4fa03db4be885fec46ca\transformed\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\7800b995f15e4fa03db4be885fec46ca\transformed\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\c54accd9effbe1a2f5b15e4cc4cd0594\transformed\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\c54accd9effbe1a2f5b15e4cc4cd0594\transformed\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\8c24445e75e6b79bc6262a85472350ba\transformed\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\8c24445e75e6b79bc6262a85472350ba\transformed\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\b01be574be9d532ed705e92e8f223b65\transformed\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\b01be574be9d532ed705e92e8f223b65\transformed\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\56a83585c19da5ad0f99e16110e8205f\transformed\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\56a83585c19da5ad0f99e16110e8205f\transformed\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\61854035fbeac4fe9735744d992b8ac0\transformed\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\61854035fbeac4fe9735744d992b8ac0\transformed\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\8d7247f1ae2b666d4813dc4689cadf2a\transformed\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\8d7247f1ae2b666d4813dc4689cadf2a\transformed\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e82909c9de5ed0ffb2f74d2f94120468\transformed\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e82909c9de5ed0ffb2f74d2f94120468\transformed\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\c2fb99bc3210be6c9a63d68bc3e02e8f\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\c2fb99bc3210be6c9a63d68bc3e02e8f\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e7ce7be3f07643069e18252dbbb72953\transformed\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e7ce7be3f07643069e18252dbbb72953\transformed\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\051c1bee5aba49ee0fe10f30a880ffa5\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\051c1bee5aba49ee0fe10f30a880ffa5\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\eee213e3fb38ee95e1740d9d7321f3da\transformed\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\eee213e3fb38ee95e1740d9d7321f3da\transformed\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\f05a81a00b8af25609ed99fee3f46af2\transformed\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\f05a81a00b8af25609ed99fee3f46af2\transformed\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\0a85c46c267a7ea89d4da97091867f79\transformed\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\0a85c46c267a7ea89d4da97091867f79\transformed\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\42c40864d06adb2a377f3fe168920491\transformed\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\42c40864d06adb2a377f3fe168920491\transformed\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\ddf896f4f7ba92becafaf600c009b1f4\transformed\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\ddf896f4f7ba92becafaf600c009b1f4\transformed\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\f069bf080bc50e5fbba9e8ea29b1c472\transformed\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\f069bf080bc50e5fbba9e8ea29b1c472\transformed\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\576b38289c85de32c5158a2b9b566df1\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Wake\.gradle\caches\transforms-3\576b38289c85de32c5158a2b9b566df1\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\f17896774487aa094a16704b5bcb23de\transformed\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\f17896774487aa094a16704b5bcb23de\transformed\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+		ADDED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+		INJECTED from D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml

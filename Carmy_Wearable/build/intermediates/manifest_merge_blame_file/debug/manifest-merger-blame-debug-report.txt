@@ -1,0 +1,104 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.samsung.android.sdk.accessory.example.helloaccessory.consumer"
+4    android:versionCode="6"
+5    android:versionName="2.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:4:5-68
+11-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:4:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:5:5-74
+12-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:5:22-71
+13    <uses-permission android:name="com.samsung.accessory.permission.ACCESSORY_FRAMEWORK" />
+13-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:6:5-92
+13-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:6:22-89
+14    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+14-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:7:5-117
+14-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:7:22-114
+15    <uses-permission android:name="com.samsung.wmanager.ENABLE_NOTIFICATION" />
+15-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:8:5-80
+15-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:8:22-77
+16    <uses-permission android:name="com.samsung.WATCH_APP_TYPE.Companion" />
+16-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:9:5-75
+16-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:9:22-73
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:10:5-66
+17-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:10:22-64
+18
+19    <application
+19-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:12:5-43:19
+20        android:allowBackup="true"
+20-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:13:9-35
+21        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+21-->[com.android.support:support-compat:28.0.0] C:\Users\Wake\.gradle\caches\transforms-3\e82909c9de5ed0ffb2f74d2f94120468\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:14:9-43
+24        android:label="@string/app_name"
+24-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:15:9-41
+25        android:testOnly="true" >
+26        <activity
+26-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:16:9-23:20
+27            android:name="com.samsung.android.sdk.accessory.example.helloaccessory.sap.ConsumerActivity"
+27-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:17:13-105
+28            android:screenOrientation="portrait" >
+28-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:18:13-49
+29            <intent-filter>
+29-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:19:13-22:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:20:17-69
+30-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:20:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:21:17-77
+32-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:21:27-74
+33            </intent-filter>
+34        </activity>
+35
+36        <service android:name="com.samsung.android.sdk.accessory.SAService" />
+36-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:25:9-78
+36-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:25:18-76
+37        <service
+37-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:26:9-27:80
+38            android:name="com.samsung.android.sdk.accessory.SAJobService"
+38-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:26:18-79
+39            android:permission="android.permission.BIND_JOB_SERVICE" />
+39-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:27:13-69
+40
+41        <receiver android:name="com.samsung.android.sdk.accessory.RegisterUponInstallReceiver" >
+41-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:29:9-33:20
+41-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:29:19-95
+42            <intent-filter>
+42-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:30:13-32:29
+43                <action android:name="com.samsung.accessory.action.REGISTER_AGENT" />
+43-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:31:17-86
+43-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:31:25-83
+44            </intent-filter>
+45        </receiver>
+46        <receiver android:name="com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver" >
+46-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:34:9-38:20
+46-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:34:19-112
+47            <intent-filter>
+47-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:35:13-37:29
+48                <action android:name="com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED" />
+48-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:36:17-100
+48-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:36:25-97
+49            </intent-filter>
+50        </receiver>
+51
+52        <meta-data
+52-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:40:9-42:62
+53            android:name="AccessoryServicesLocation"
+53-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:41:13-53
+54            android:value="/res/xml/accessoryservices.xml" />
+54-->D:\Dev\Carmy_Wearable\Carmy_Wearable\src\main\AndroidManifest.xml:42:13-59
+55    </application>
+56
+57</manifest>

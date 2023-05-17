@@ -41,7 +41,14 @@ import com.samsung.android.sdk.accessory.example.helloaccessory.sap.services.com
 
 import org.json.JSONException;
 
+import org.json.JSONException;
+
 import java.io.IOException;
+
+import entities.Vehicle;
+import services.VehicleManager;
+import services.commands.LockDoors;
+import services.commands.UnlockDoors;
 
 public class ConsumerService extends SAAgentV2 {
     private static final String TAG = "HelloAccessory(C)";
@@ -144,7 +151,36 @@ public class ConsumerService extends SAAgentV2 {
 
         @Override
         public void onReceive(int channelId, byte[] data) {
-            final String message = new String(data);
+            String message = new String(data);
+            try {
+                switch (message) {
+                    case "Lock" -> {
+                        if (LockDoors.lockDoors().equals("202")) {
+                            message += " Sucess";
+                        }
+                        else {
+                            message += " Failed";
+                        }
+                        break;
+                    }
+                    case "Unlock" -> {
+                        if (UnlockDoors.unlockDoors().equals("202")) {
+                            message += " Sucess";
+                        }
+                        else {
+                            message += " Failed";
+                        }
+                        break;
+                    }
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
+
             addMessage("Received: ", message);
             if (message == "Lock") {
                 try {
@@ -158,6 +194,7 @@ public class ConsumerService extends SAAgentV2 {
                 }
             }
         }
+
 
         @Override
         protected void onServiceConnectionLost(int reason) {
